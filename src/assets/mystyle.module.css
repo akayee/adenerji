@@ -1,9 +1,4 @@
-.bigblue {
-    color: rgb(30, 255, 188);
-    padding: 40px;
-    font-family: Arial;
-    text-align: center;
-  }
+
   .navbar{
     width: 100%;
     float: right;
@@ -64,3 +59,27 @@
     bottom:5%;
     left: 8%;
   }
+  .flex1{
+    display: flex;
+  }
+  .homeimg{
+    height: 500px;
+    width: 600px;
+  }
+  .ansayfadiv{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .anasayfametin{
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+  }
+  .bigblue {
+    color: #069;
+      font-family: Arial;
+      text-align: center;
+    }
+  

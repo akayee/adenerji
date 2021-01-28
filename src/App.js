@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 
 import Home from './screens/Home';
+import Projects from './screens/Projects';
+import About from './screens/About';
 import styles from './assets/mystyle.module.css';
 
 // This site has 3 pages, all of which are rendered
@@ -26,7 +28,7 @@ export default function App() {
         <div className={styles.circle2} />
         <div className={styles.glass}>
         <div className={styles.navbar}>          
-        <div className={styles.logo}>AD Enerji Mühendislik</div>
+        <div className={styles.logo}><Link className={styles.link} to="/">AD Enerji Mühendislik </Link></div>
           <ul >
             <li >
               <Link  className={styles.link}to="/dashboard">Projeler</Link>
@@ -55,7 +57,7 @@ export default function App() {
             <About />
           </Route>
           <Route path="/dashboard">
-            <Dashboard />
+            <Projects />
           </Route>
         </Switch>
         </div>
@@ -69,18 +71,3 @@ export default function App() {
 // in your app.
 
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
