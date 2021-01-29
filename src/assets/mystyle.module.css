@@ -73,13 +73,21 @@
     align-items: center;
   }
   .anasayfametin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
   }
   .bigblue {
     color: #069;
-      font-family: Arial;
-      text-align: center;
-    }
+    font-family: Arial;
+    text-align: center;
+  }
+  .blue{
+    color: #006688;
+    font-family: Arial;
+    text-align: center;
+  }
   

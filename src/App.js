@@ -10,6 +10,7 @@ import Home from './screens/Home';
 import Projects from './screens/Projects';
 import About from './screens/About';
 import styles from './assets/mystyle.module.css';
+import NavbarSite from "./components/ui/NavbarSite";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -26,21 +27,9 @@ export default function App() {
       <div className={styles.main}>
         <div className={styles.circle1} />
         <div className={styles.circle2} />
-        <div className={styles.glass}>
-        <div className={styles.navbar}>          
-        <div className={styles.logo}><Link className={styles.link} to="/">AD Enerji Mühendislik </Link></div>
-          <ul >
-            <li >
-              <Link  className={styles.link}to="/dashboard">Projeler</Link>
-            </li>
-            <li >
-              <Link className={styles.link} to="/about">Hakkımızda</Link>
-            </li>
-            <li >
-              <Link className={styles.link} to="/">Ana Sayfa</Link>
-            </li>
-          </ul>
-        </div>
+        <div className={styles.glass}>  
+        <NavbarSite />
+        
 
         {/*
           A <Switch> looks through all its children <Route>
