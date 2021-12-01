@@ -19,8 +19,8 @@ const NavbarSite = (props) => {
 
   return (
     <div>
-      <Navbar color="rgba(255,255,255,0.7)" light expand="md">
-        <NavbarBrand href="/"><div className={styles.bigblue}>Ad Enerji Mühendislik</div></NavbarBrand>
+      <Navbar  color="rgba(255,255,255,0.7)" light expand="md">
+        <NavbarBrand href="/"><div className={styles.bigblue}>AD Enerji Mühendislik</div></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -34,7 +34,7 @@ const NavbarSite = (props) => {
               <NavLink href="/dashboard"><div className={styles.bigblue}>Projeler</div></NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Yenilenebilir Enerji Kaynakları</NavbarText>
+          <NavbarText><div className={styles.blue}>Yenilenebilir Enerji Kaynakları</div></NavbarText>
         </Collapse>
       </Navbar>
     </div>
